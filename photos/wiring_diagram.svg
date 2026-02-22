@@ -1,0 +1,154 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" width="1000" height="600" font-family="Arial, sans-serif" font-size="12">
+
+  <!-- Background -->
+  <rect width="1000" height="600" fill="#f7f3ee"/>
+  <text x="500" y="32" text-anchor="middle" font-size="18" font-weight="bold" fill="#222">Qiara Keypad x Arduino Nano ESP32 — Wiring Diagram</text>
+
+  <!-- ===== Arduino Nano ESP32 Body ===== -->
+  <rect x="390" y="55" width="120" height="410" rx="10" fill="#00878A" stroke="#005f61" stroke-width="2.5"/>
+  <text x="450" y="78" text-anchor="middle" fill="white" font-weight="bold" font-size="11">Arduino</text>
+  <text x="450" y="92" text-anchor="middle" fill="white" font-weight="bold" font-size="11">Nano ESP32</text>
+  <rect x="425" y="56" width="50" height="8" rx="3" fill="#333"/>
+
+  <!-- LEFT PINS top to bottom: TX, RX, RST, GND, D2, D3, D4, D5, D6, D7, D8, D9, D10, D11, D12, D13 -->
+  <rect x="370" y="105" width="20" height="12" fill="#ddd" stroke="#bbb"/><text x="365" y="115" text-anchor="end" fill="#aaa" font-size="11">TX</text>
+  <rect x="370" y="121" width="20" height="12" fill="#ddd" stroke="#bbb"/><text x="365" y="131" text-anchor="end" fill="#aaa" font-size="11">RX</text>
+  <rect x="370" y="137" width="20" height="12" fill="#ddd" stroke="#bbb"/><text x="365" y="147" text-anchor="end" fill="#aaa" font-size="11">RST</text>
+  <rect x="370" y="153" width="20" height="12" fill="#444" stroke="#222"/><text x="365" y="163" text-anchor="end" fill="#333" font-size="11" font-weight="bold">GND</text>
+  <!-- D2 Row1 -->
+  <rect x="370" y="169" width="20" height="12" fill="#e74c3c" stroke="#c0392b"/><text x="365" y="179" text-anchor="end" fill="#e74c3c" font-size="11" font-weight="bold">D2</text>
+  <!-- D3 Row2 -->
+  <rect x="370" y="185" width="20" height="12" fill="#e67e22" stroke="#ca6f1e"/><text x="365" y="195" text-anchor="end" fill="#e67e22" font-size="11" font-weight="bold">D3</text>
+  <!-- D4 Row3 -->
+  <rect x="370" y="201" width="20" height="12" fill="#f1c40f" stroke="#d4ac0d"/><text x="365" y="211" text-anchor="end" fill="#b7950b" font-size="11" font-weight="bold">D4</text>
+  <!-- D5 Row4 -->
+  <rect x="370" y="217" width="20" height="12" fill="#2ecc71" stroke="#27ae60"/><text x="365" y="227" text-anchor="end" fill="#27ae60" font-size="11" font-weight="bold">D5</text>
+  <!-- D6 unused -->
+  <rect x="370" y="233" width="20" height="12" fill="#ddd" stroke="#bbb"/><text x="365" y="243" text-anchor="end" fill="#aaa" font-size="11">D6</text>
+  <!-- D7 Buzzer -->
+  <rect x="370" y="249" width="20" height="12" fill="#e91e63" stroke="#c2185b"/><text x="365" y="259" text-anchor="end" fill="#e91e63" font-size="11" font-weight="bold">D7</text>
+  <!-- D8 unused -->
+  <rect x="370" y="265" width="20" height="12" fill="#ddd" stroke="#bbb"/><text x="365" y="275" text-anchor="end" fill="#aaa" font-size="11">D8</text>
+  <!-- D9 unused -->
+  <rect x="370" y="281" width="20" height="12" fill="#ddd" stroke="#bbb"/><text x="365" y="291" text-anchor="end" fill="#aaa" font-size="11">D9</text>
+  <!-- D10 Col1 -->
+  <rect x="370" y="297" width="20" height="12" fill="#3498db" stroke="#2980b9"/><text x="365" y="307" text-anchor="end" fill="#2980b9" font-size="11" font-weight="bold">D10</text>
+  <!-- D11 Col2 -->
+  <rect x="370" y="313" width="20" height="12" fill="#9b59b6" stroke="#8e44ad"/><text x="365" y="323" text-anchor="end" fill="#8e44ad" font-size="11" font-weight="bold">D11</text>
+  <!-- D12 Col3 -->
+  <rect x="370" y="329" width="20" height="12" fill="#1abc9c" stroke="#17a589"/><text x="365" y="339" text-anchor="end" fill="#17a589" font-size="11" font-weight="bold">D12</text>
+  <!-- D13 unused -->
+  <rect x="370" y="345" width="20" height="12" fill="#ddd" stroke="#bbb"/><text x="365" y="355" text-anchor="end" fill="#aaa" font-size="11">D13</text>
+
+  <!-- RIGHT PINS top to bottom: VIN, GND, RST, 5V, A7, A6, A5, A4, A3, A2, A1, A0, AREF, 3V3 -->
+  <rect x="510" y="105" width="20" height="12" fill="#ddd" stroke="#bbb"/><text x="535" y="115" fill="#aaa" font-size="11">VIN</text>
+  <rect x="510" y="121" width="20" height="12" fill="#444" stroke="#222"/><text x="535" y="131" fill="#333" font-size="11" font-weight="bold">GND</text>
+  <rect x="510" y="137" width="20" height="12" fill="#ddd" stroke="#bbb"/><text x="535" y="147" fill="#aaa" font-size="11">RST</text>
+  <rect x="510" y="153" width="20" height="12" fill="#ddd" stroke="#bbb"/><text x="535" y="163" fill="#aaa" font-size="11">5V</text>
+  <rect x="510" y="169" width="20" height="12" fill="#ddd" stroke="#bbb"/><text x="535" y="179" fill="#aaa" font-size="11">A7</text>
+  <rect x="510" y="185" width="20" height="12" fill="#ddd" stroke="#bbb"/><text x="535" y="195" fill="#aaa" font-size="11">A6</text>
+  <rect x="510" y="201" width="20" height="12" fill="#ddd" stroke="#bbb"/><text x="535" y="211" fill="#aaa" font-size="11">A5</text>
+  <rect x="510" y="217" width="20" height="12" fill="#ddd" stroke="#bbb"/><text x="535" y="227" fill="#aaa" font-size="11">A4</text>
+  <rect x="510" y="233" width="20" height="12" fill="#ddd" stroke="#bbb"/><text x="535" y="243" fill="#aaa" font-size="11">A3</text>
+  <rect x="510" y="249" width="20" height="12" fill="#ddd" stroke="#bbb"/><text x="535" y="259" fill="#aaa" font-size="11">A2</text>
+  <rect x="510" y="265" width="20" height="12" fill="#ddd" stroke="#bbb"/><text x="535" y="275" fill="#aaa" font-size="11">A1</text>
+  <!-- A0 NeoPixel data -->
+  <rect x="510" y="281" width="20" height="12" fill="#8e44ad" stroke="#6c3483"/><text x="535" y="291" fill="#8e44ad" font-size="11" font-weight="bold">A0</text>
+  <rect x="510" y="297" width="20" height="12" fill="#ddd" stroke="#bbb"/><text x="535" y="307" fill="#aaa" font-size="11">AREF</text>
+  <!-- 3V3 NeoPixel VCC -->
+  <rect x="510" y="313" width="20" height="12" fill="#c0392b" stroke="#922b21"/><text x="535" y="323" fill="#c0392b" font-size="11" font-weight="bold">3V3</text>
+  <rect x="510" y="329" width="20" height="12" fill="#ddd" stroke="#bbb"/><text x="535" y="339" fill="#aaa" font-size="11">D13</text>
+
+  <!-- ===== KEYPAD ===== -->
+  <rect x="40" y="110" width="160" height="260" rx="8" fill="#fdebd0" stroke="#e59866" stroke-width="2"/>
+  <text x="120" y="136" text-anchor="middle" font-weight="bold" fill="#333" font-size="13">Qiara Keypad</text>
+  <text x="120" y="152" text-anchor="middle" fill="#888" font-size="11">4x3 matrix</text>
+
+  <!-- Row connectors on right edge of keypad -->
+  <circle cx="200" cy="178" r="5" fill="#e74c3c"/>
+  <text x="55" y="182" fill="#e74c3c" font-size="11" font-weight="bold">R1 (btn 3 top-left)</text>
+
+  <circle cx="200" cy="200" r="5" fill="#e67e22"/>
+  <text x="55" y="204" fill="#e67e22" font-size="11" font-weight="bold">R2 (btn 6 top-left)</text>
+
+  <circle cx="200" cy="222" r="5" fill="#b7950b"/>
+  <text x="55" y="226" fill="#b7950b" font-size="11" font-weight="bold">R3 (btn 9 top-left)</text>
+
+  <circle cx="200" cy="244" r="5" fill="#27ae60"/>
+  <text x="55" y="248" fill="#27ae60" font-size="11" font-weight="bold">R4 (btn # top-left)</text>
+
+  <!-- Col connectors -->
+  <circle cx="200" cy="285" r="5" fill="#2980b9"/>
+  <text x="55" y="289" fill="#2980b9" font-size="11" font-weight="bold">C1 (btn * btm-right)</text>
+
+  <circle cx="200" cy="307" r="5" fill="#8e44ad"/>
+  <text x="55" y="311" fill="#8e44ad" font-size="11" font-weight="bold">C2 (btn 0 btm-right)</text>
+
+  <circle cx="200" cy="329" r="5" fill="#17a589"/>
+  <text x="55" y="333" fill="#17a589" font-size="11" font-weight="bold">C3 (btn # btm-right)</text>
+
+  <!-- Wires Rows → Left Arduino pins -->
+  <polyline points="200,178 285,178 285,175 370,175" fill="none" stroke="#e74c3c" stroke-width="2"/>
+  <polyline points="200,200 280,200 280,191 370,191" fill="none" stroke="#e67e22" stroke-width="2"/>
+  <polyline points="200,222 275,222 275,207 370,207" fill="none" stroke="#b7950b" stroke-width="2"/>
+  <polyline points="200,244 270,244 270,223 370,223" fill="none" stroke="#27ae60" stroke-width="2"/>
+
+  <!-- Wires Cols → Left Arduino pins -->
+  <polyline points="200,285 265,285 265,303 370,303" fill="none" stroke="#2980b9" stroke-width="2"/>
+  <polyline points="200,307 260,307 260,319 370,319" fill="none" stroke="#8e44ad" stroke-width="2"/>
+  <polyline points="200,329 255,329 255,335 370,335" fill="none" stroke="#17a589" stroke-width="2"/>
+
+  <!-- ===== BUZZER ===== -->
+  <rect x="660" y="110" width="130" height="90" rx="8" fill="#d5e8d4" stroke="#82b366" stroke-width="2"/>
+  <text x="725" y="138" text-anchor="middle" font-weight="bold" fill="#333" font-size="13">Buzzer</text>
+  <text x="725" y="155" text-anchor="middle" fill="#666" font-size="11">Kingstate KMTG1102</text>
+  <text x="725" y="172" text-anchor="middle" fill="#666" font-size="11">passive piezo ~4100Hz</text>
+  <!-- Buzzer pins on left edge -->
+  <circle cx="660" cy="140" r="5" fill="#e91e63"/>
+  <text x="662" y="198" fill="#e91e63" font-size="11">+ signal</text>
+  <circle cx="660" cy="165" r="5" fill="#444"/>
+  <text x="662" y="213" fill="#444" font-size="11">- GND</text>
+
+  <!-- Wire Buzzer+ → D7 -->
+  <polyline points="660,140 620,140 620,255 530,255" fill="none" stroke="#e91e63" stroke-width="2"/>
+  <!-- Wire Buzzer- → GND (right side) -->
+  <polyline points="660,165 615,165 615,127 530,127" fill="none" stroke="#444" stroke-width="2"/>
+
+  <!-- ===== NEOPIXEL ===== -->
+  <rect x="660" y="290" width="130" height="110" rx="8" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
+  <text x="725" y="318" text-anchor="middle" font-weight="bold" fill="#333" font-size="13">NeoPixel LED</text>
+  <text x="725" y="335" text-anchor="middle" fill="#666" font-size="11">WS2812B</text>
+  <!-- NeoPixel pins -->
+  <circle cx="660" cy="335" r="5" fill="#8e44ad"/>
+  <text x="662" y="355" fill="#8e44ad" font-size="11">Data</text>
+  <circle cx="660" cy="358" r="5" fill="#c0392b"/>
+  <text x="662" y="375" fill="#c0392b" font-size="11">VCC</text>
+  <circle cx="660" cy="381" r="5" fill="#444"/>
+  <text x="662" y="397" fill="#444" font-size="11">GND</text>
+
+  <!-- Wire Data → A0 -->
+  <polyline points="660,335 625,335 625,287 530,287" fill="none" stroke="#8e44ad" stroke-width="2"/>
+  <!-- Wire VCC → 3V3 -->
+  <polyline points="660,358 630,358 630,319 530,319" fill="none" stroke="#c0392b" stroke-width="2"/>
+  <!-- Wire GND → GND right -->
+  <polyline points="660,381 635,381 635,127 530,127" fill="none" stroke="#555" stroke-width="2" stroke-dasharray="5,3"/>
+
+  <!-- ===== LEGEND ===== -->
+  <rect x="40" y="490" width="920" height="90" rx="6" fill="white" stroke="#ccc" stroke-width="1.5"/>
+  <text x="60" y="510" font-weight="bold" fill="#333" font-size="12">Pin mapping:</text>
+
+  <rect x="60" y="518" width="12" height="12" fill="#e74c3c" rx="2"/><text x="78" y="529" fill="#333" font-size="11">D2=Row1</text>
+  <rect x="155" y="518" width="12" height="12" fill="#e67e22" rx="2"/><text x="173" y="529" fill="#333" font-size="11">D3=Row2</text>
+  <rect x="250" y="518" width="12" height="12" fill="#f1c40f" rx="2"/><text x="268" y="529" fill="#333" font-size="11">D4=Row3</text>
+  <rect x="345" y="518" width="12" height="12" fill="#2ecc71" rx="2"/><text x="363" y="529" fill="#333" font-size="11">D5=Row4</text>
+  <rect x="440" y="518" width="12" height="12" fill="#3498db" rx="2"/><text x="458" y="529" fill="#333" font-size="11">D10=Col1</text>
+  <rect x="545" y="518" width="12" height="12" fill="#9b59b6" rx="2"/><text x="563" y="529" fill="#333" font-size="11">D11=Col2</text>
+  <rect x="650" y="518" width="12" height="12" fill="#1abc9c" rx="2"/><text x="668" y="529" fill="#333" font-size="11">D12=Col3</text>
+  <rect x="755" y="518" width="12" height="12" fill="#e91e63" rx="2"/><text x="773" y="529" fill="#333" font-size="11">D7=Buzzer+</text>
+  <rect x="60" y="542" width="12" height="12" fill="#8e44ad" rx="2"/><text x="78" y="553" fill="#333" font-size="11">A0=NeoPixel Data</text>
+  <rect x="210" y="542" width="12" height="12" fill="#c0392b" rx="2"/><text x="228" y="553" fill="#333" font-size="11">3V3=NeoPixel VCC</text>
+  <rect x="380" y="542" width="12" height="12" fill="#444" rx="2"/><text x="398" y="553" fill="#333" font-size="11">GND=Buzzer- and NeoPixel GND</text>
+
+  <text x="60" y="572" fill="#c0392b" font-size="11" font-weight="bold">WARNING: Desolder pull-down resistors on keypad PCB back (columns C1,C2,C3) or columns will stay stuck at 0V!</text>
+
+</svg>
