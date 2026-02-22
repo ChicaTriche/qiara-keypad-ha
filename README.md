@@ -75,7 +75,7 @@ The original battery holder must be removed to prevent the old MCU from interfer
 
 ### Wiring diagram
 
-!\[Wiring diagram\](photos/wiring_diagram.png)
+![Wiring diagram](photos/wiring_diagram.png)
 
 ### Connection table
 
