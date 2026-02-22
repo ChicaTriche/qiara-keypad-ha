@@ -3,8 +3,6 @@
 Qiara went bankrupt, leaving their smart home devices without cloud support. This tutorial shows how to **hack a Qiara keypad** and turn it into a fully functional Home Assistant alarm keypad using an Arduino Nano ESP32.
 
 
----
-
 ## What you'll need
 
 ### Hardware
@@ -21,15 +19,12 @@ Qiara went bankrupt, leaving their smart home devices without cloud support. Thi
 The Qiara PCB includes a **Kingstate KMTG1102-A1 piezo transducer** on the back. We'll reuse it directly — no need to buy a buzzer.
 
 
----
-
 ## Understanding the keypad PCB
 
 ### Front (buttons side)
 
- ![Keypad PCB front](photos/pcb_front.jpg)
+ ![Keypad PCB front](photos/pcb_front.png)
 
-x
 
 The Qiara keypad is a standard **4×3 matrix keypad** with dome buttons:
 
@@ -48,6 +43,7 @@ Each button has 4 pins:
 
 ### Back (components side)
 
+![Keypad PCB front](photos/pcb_back.png)
 
 The back of the PCB contains:
 
@@ -55,8 +51,6 @@ The back of the PCB contains:
 * The Kingstate piezo buzzer
 * Pull-down resistors on the column lines ← **these must be removed!**
 
-
----
 
 ### ⚠️ Important: pull-down resistors
 
@@ -66,15 +60,12 @@ The original Qiara MCU expected pull-down resistors on the column lines. Even wi
 
 How to find them:
 
-
 1. Power up your ESP32 with the keypad connected
 2. Measure voltage on each column pin — pull-down resistors are present for C2 and C3 and have to be removed
 3. Disconnect the ESP32, then use multimeter in continuity mode: probe each SMD component on the back while touching a column pin
 4. When you hear a beep → that's your pull-down resistor, desolder it
 5. Repeat for all 3 columns and verify each column rises back to 3.3V
 
-
----
 
 ## Wiring
 
@@ -84,7 +75,7 @@ The original battery holder must be removed to prevent the old MCU from interfer
 
 ### Wiring diagram
 
-!\[Wiring diagram\](wiring_diagram.png)
+!\[Wiring diagram\](photos/wiring_diagram.png)
 
 ### Connection table
 
@@ -114,8 +105,6 @@ The original battery holder must be removed to prevent the old MCU from interfer
 Use your multimeter in **diode mode** to identify the + pin (\~0.7V = forward bias = + on red probe). Since the buzzer is a **passive piezo transducer**, it requires a PWM signal — use `tone(pin, 4100)` at its resonant frequency of \~4100 Hz.
 
 
----
-
 ## Arduino code
 
 See `code/alarm_keypad.ino`
@@ -142,8 +131,6 @@ See `code/alarm_keypad.ino`
 | Armed | Red LED solid |
 | Disarmed | Green LED solid |
 
-
----
 
 ## Home Assistant setup
 
@@ -225,8 +212,6 @@ action:
 ```
 
 
----
-
 ## Tips & troubleshooting
 
 **Keypad not detected / all buttons read as column 1**
@@ -241,8 +226,6 @@ action:
 **Keys not detected during arming countdown**
 → Make sure cancellation logic is NOT inside a blocking `delay()` loop — use `millis()` instead
 
-
----
 
 ## License
 
